@@ -31,3 +31,31 @@ A linked list has the following properties:
 
 ```Refer question2.js for the solution```
 
+### How to design a tiny URL or URL shortener?
+
+Design a system url that takes big urls like "https://www.thisisbigurlyooknow.com/interviewquestions/tinyurl" and convert to short 6 letters URL.
+
+So your program should take an integer id and generate a 6 character long URL. 
+
+A URL character can be one of the following
+
+- A lower case alphabet [‘a’ to ‘z’], total 26 characters
+- An upper case alphabet [‘A’ to ‘Z’], total 26 characters
+- A digit [‘0′ to ‘9’], total 10 characters
+
+There are total 26 + 26 + 10 = 62 possible characters.
+
+So the task is to convert an integer (database id) to a base 62 number where digits of 62 base are "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+
+
+URL shortening is used to create shorter aliases for long URLs. We call these shortened aliases “short links.” Users are redirected to the original URL when they hit these short links. Short links save a lot of space when displayed, printed, messaged, or tweeted. Additionally, users are less likely to mistype shorter URLs.
+
+
+input: https://www.test123.io/collection/page/5668639101419520/5649050225344512/5668600916475904/
+output: http://tinyurl.com/jlg8zpc
+
+```Refer question3.js for the solution```
+
+Within the logic Id and tinyUrl output will come same every time, why becasue we have a req number which is unique. 
+
+let say we have any number which is similar to the unique key then we have to try with another unique key.
