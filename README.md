@@ -50,11 +50,6 @@ So the task is to convert an integer (database id) to a base 62 number where dig
 
 URL shortening is used to create shorter aliases for long URLs. We call these shortened aliases “short links.” Users are redirected to the original URL when they hit these short links. Short links save a lot of space when displayed, printed, messaged, or tweeted. Additionally, users are less likely to mistype shorter URLs.
 
-
-input: https://www.test123.io/collection/page/5668639101419520/5649050225344512/5668600916475904/
-
-output: http://tinyurl.com/jlg8zpc
-
 ```Refer question3.js for the solution```
 
 Within the logic Id and tinyUrl output will come same every time, why becasue we have a req number which is unique. 
