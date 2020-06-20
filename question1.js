@@ -1,6 +1,5 @@
 // Author: lazylord
 var hybridStack = [] // this stack act like queue
-
 Array.prototype.add = function(val) {
     hybridStack.push(val)
     // stack1 is array we are using for adding element
