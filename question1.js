@@ -14,7 +14,9 @@ Array.prototype.kick = function(){
     if(this.length === 0){
         // if the stack1 is empty, we can't remove any thing right
         return 'There is no elements Lazylord';
-    }else {
+    } else if(this.length === 1){ // if a single operation as enqueue was performed
+        return this.pop();
+    } else {
         // we have to apply our brain here
         // we are queue now, so we have to kick the first one first
         while(this.length > 0){
